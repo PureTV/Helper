@@ -1,14 +1,14 @@
-<!-- README.md, parse_video/, <https://github.com/sceext2/parse_video>
-   - author sceext <sceext@foxmail.com>
-   - test201601022231
+<!-- README.md, PureTV/, <https://github.com/PureTV/PureTV_Helper>
+   - author PureTV <Hyperay@Hyperay.cc>
+   - test201601031830
   -->
 
-# PureTV 1.0
+# PureTV_Helper 1.0
 
 
 ## Description
 
-`PureTV` is used to get video information (video file download URL) from some web sites. 
+`PureTV_Helper` is used to get video information (video file download URL) from some web sites. 
 
 **Supported** (5)
 
@@ -28,7 +28,7 @@
 
 ## Install
 
-`parse_video` runs under `python 3.5`. 
+`PureTV_Helper` runs under `python 3.5`. 
 <https://www.python.org/>
 
 
@@ -37,7 +37,7 @@
 ```
 $ ./parsev --help
 Usage: parsev [OPTION]... URL
-parse_video: get video info from some web sites. 
+PureTV_Helper: get video info from some web sites. 
 
   -i, --min HD       set min hd number for video formats
   -M, --max HD       set max hd
@@ -57,7 +57,7 @@ parse_video: get video info from some web sites.
       --version  output version information and exit
       --license  show license information and exit
 
-More information online: <https://github.com/sceext2/parse_video> 
+More information online: <https://github.com/PureTV/PureTV_Helper> 
 $ 
 ```
 
@@ -71,8 +71,8 @@ Please run `make test`
 
 ```
 $ ./parsev --license
-    parse_video : get video info from some web sites. 
-    Copyright (C) 2015-2016 sceext <sceext@foxmail.com>
+    PureTV : get video info from some web sites. 
+    Copyright (C) 2016 PureTV <Hyperay@Hyperay.cc>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

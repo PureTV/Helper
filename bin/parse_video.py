@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# parse_video.py, parse_video/bin/
+# PureTV_Helper.py, PureTV_Helper/bin/
 #
-#    parse_video : get video info from some web sites. 
+#    PureTV_Helper : get video info from some web sites. 
 #    Copyright (C) 2015-2016 sceext <sceext@foxmail.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-''' parse_video main bin file
+''' PureTV_Helper main bin file
 
 OPTIONS: 
 
@@ -47,7 +47,7 @@ import json
 from lib.b import log
 from lib import entry
 
-VERSION_STR = 'parse_video version 0.5.3.0 test201601022218'
+VERSION_STR = 'PureTV_Helper version 0.5.3.0 test201601022218'
 
 # global data
 etc = {}
@@ -70,7 +70,7 @@ etc['more'] = None
 def p_version():
     print(VERSION_STR + '''
 
-    parse_video  Copyright (C) 2015-2016  sceext <sceext@foxmail.com>
+    PureTV_Helper  Copyright (C) 2015-2016  sceext <sceext@foxmail.com>
     This program comes with ABSOLUTELY NO WARRANTY. This is free software, and 
     you are welcome to redistribute it under certain conditions. 
 
@@ -81,7 +81,7 @@ Please use "--license" or read LICENSE for more details. \
 def p_help():
     print('''\
 Usage: parsev [OPTION]... URL
-parse_video: get video info from some web sites. 
+PureTV_Helper: get video info from some web sites. 
 
   -i, --min HD       set min hd number for video formats
   -M, --max HD       set max hd
@@ -101,12 +101,12 @@ parse_video: get video info from some web sites.
       --version  output version information and exit
       --license  show license information and exit
 
-More information online: <https://github.com/sceext2/parse_video> \
+More information online: <https://github.com/sceext2/PureTV_Helper> \
 ''')
 
 def p_license():
     print('''\
-    parse_video : get video info from some web sites. 
+    PureTV_Helper : get video info from some web sites. 
     Copyright (C) 2015-2016 sceext <sceext@foxmail.com>
 
     This program is free software: you can redistribute it and/or modify
@@ -182,7 +182,7 @@ def do_parse():
             p('ERROR: can not load more info file \"' + etc['more'] + '\" ')
             raise
         entry.var._['more'] = more_info	# do set more
-    # NOTE print parse_video version info in debug mode
+    # NOTE print PureTV_Helper version info in debug mode
     if etc['log_level'] == 'debug':
         p('DEBUG: ' + VERSION_STR)
     # do parse
@@ -266,6 +266,6 @@ def p_args(args):
             etc['url'] = one
     # done p_args
 
-# end parse_video.py
+# end PureTV_Helper.py
 
 
